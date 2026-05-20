@@ -1,0 +1,51 @@
+{
+    "name": "perbendaharaan/cas-auth",
+    "description": "Pakej CAS Authentication (SATUID) untuk sistem-sistem di bawah Perbendaharaan Malaysia",
+    "type": "library",
+    "keywords": ["laravel", "cas", "satuid", "authentication", "perbendaharaan"],
+    "homepage": "https://github.com/perbendaharaan/cas-auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bahagian ICT Perbendaharaan Malaysia",
+            "email": "ict@treasury.gov.my"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^12.0",
+        "illuminate/http": "^12.0",
+        "illuminate/auth": "^12.0",
+        "illuminate/console": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Perbendaharaan\\CasAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Perbendaharaan\\CasAuth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Perbendaharaan\\CasAuth\\CasAuthServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
