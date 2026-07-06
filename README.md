@@ -39,3 +39,14 @@ Buka fail `composer.json` aplikasi Laravel anda dan tambahkan konfigurasi reposi
         }
     ]
 }
+
+Sekiranya organisasi anda menggunakan self-hosted GitLab/Gitea OSDEC, gunakan jenis "vcs":
+
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "[https://github.com/shamsulA6/satuid-cas.git](https://github.com/shamsulA6/satuid-cas.git)"
+        }
+    ]
+}
