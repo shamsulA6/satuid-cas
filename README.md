@@ -50,3 +50,8 @@ Sekiranya organisasi anda menggunakan self-hosted GitLab/Gitea OSDEC, gunakan je
         }
     ]
 }
+
+Langkah 2 — Pemasangan Pakej
+Jalankan perintah Composer berikut pada terminal anda:
+composer require perbendaharaan/cas-auth:^1.0
+
