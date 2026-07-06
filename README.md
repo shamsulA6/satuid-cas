@@ -31,6 +31,7 @@ Pilihan B: Menggunakan self-hosted GitLab/Gitea OSDEC (VCS)
 
 ## Langkah 2 — Pemasangan Pakej
 Jalankan perintah Composer berikut pada terminal anda:
+
 ## Langkah 3 — Jalankan Perintah Pemasangan Artisan
 Laksanakan perintah di bawah untuk menerbitkan fail-fail konfigurasi pakej:
 Perintah ini secara automatik akan menerbitkan fail berikut:
@@ -38,6 +39,7 @@ Perintah ini secara automatik akan menerbitkan fail berikut:
  Templat persekitaran: .env.cas.example
  Fail migrasi pangkalan data (migration)
  Paparan halaman log masuk tempatan (local login views)
+
 ## Langkah 4 — Konfigurasi Fail Persekitaran (.env)
 Salin pemboleh ubah daripada fail .env.cas.example yang telah diterbitkan ke fail .env
 utama anda, kemudian kemas kini nilainya:
@@ -64,6 +66,7 @@ Ini, TOML
 Jalankan arahan migrasi untuk mengemas kini struktur pangkalan data:
 Nota: Proses ini akan menambah kolum id_pgn_ldap ke dalam jadual users
 sedia ada anda.
+
 Langkah 6 — Konfigurasi Middleware dalam routes/web.php
 Gunakan tetapan dinamik untuk mengesan mod pengesahan secara automatik:
 # Toggle: true = Menggunakan SATUID (Prod), false = Login Tempatan (Dev)
