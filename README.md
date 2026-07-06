@@ -26,21 +26,19 @@ Diedarkan melalui **OSDEC Package Registry** — tidak tersedia di Packagist awa
 
 ## 🚀 Pemasangan
 
-### Langkah 1 — Tambah OSDEC Registry dalam `composer.json` Projek
-
-Buka fail `composer.json` aplikasi Laravel anda dan tambahkan konfigurasi repositori berikut:
-
+Langkah 1 — Tambah OSDEC Registry dalam composer.json Projek
+Buka fail composer.json aplikasi Laravel anda dan tambahkan konfigurasi repositori berikut:
 ```json
 {
     "repositories": [
         {
             "type": "composer",
-            "url": "[https://packages.osdec.gov.my](https://packages.osdec.gov.my)"
+            "url": "https://packages.osdec.gov.my"
         }
     ]
 }
 
-Sekiranya organisasi anda menggunakan self-hosted GitLab/Gitea OSDEC, gunakan jenis "vcs":
+Sekiranya organisasi anda menggunakan self-hosted GitLab/Gitea OSDEC, gunakan jenis "vcs"::
 
 {
     "repositories": [
@@ -52,6 +50,5 @@ Sekiranya organisasi anda menggunakan self-hosted GitLab/Gitea OSDEC, gunakan je
 }
 
 Langkah 2 — Pemasangan Pakej
-Jalankan perintah Composer berikut pada terminal anda:
 composer require perbendaharaan/cas-auth:^1.0
 
