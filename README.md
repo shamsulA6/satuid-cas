@@ -39,5 +39,6 @@ Buka fail `composer.json` aplikasi Laravel anda dan tambahkan konfigurasi reposi
         }
     ]
 }
-Sekiranya organisasi anda menggunakan self-hosted GitLab/Gitea OSDEC, gunakan jenis "vcs":
+
+
 
